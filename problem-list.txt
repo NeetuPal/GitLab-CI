@@ -2,3 +2,39 @@
 sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
 sudo: a password is required
 
+#connection timeout
+nano ~/.ssh/config
+Host *
+  ServerAliveInterval 60
+  ServerAliveCountMax 120
+  TCPKeepAlive yes
+
+#no terminal
+sudo su
+cd /home/gitlab-runner
+mv .bash_logout .bash_logout.bkp
+
+#To disable swap
+sudo swapoff -a
+
+#Install docker engine using the apt repository
+link
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+#kubeadm
+link
+https://v1-33.docs.kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
+#calico
+link
+https://docs.tigera.io/calico/latest/getting-started/kubernetes/k8s-single-node
+
+#update deployment.yaml
+image
+
+#kubeconfig token
+echo -n 'token' | base64
+
+#variable
+docker usrname, pwd
+k8s kubeconfig token
