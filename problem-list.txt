@@ -35,6 +35,11 @@ image
 #kubeconfig token
 echo -n 'token' | base64
 
+#repo
+https://github.com/kubernetes/ingress-nginx
+
+
+
 #variable
 docker usrname, pwd
 k8s kubeconfig token
