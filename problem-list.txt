@@ -37,17 +37,19 @@ sudo systemctl restart containerd
 link
 https://docs.tigera.io/calico/latest/getting-started/kubernetes/k8s-single-node
 
-#repo
-https://github.com/kubernetes/ingress-nginx
 
 #update deployment.yaml
 image
 
-#kubeconfig token
-echo -n 'token' | base64
 #join cmd
 kubeadm token create --print-join-command
 
+
+#kubeconfig token
+echo -n 'token' | base64
+
+#repo
+https://github.com/kubernetes/ingress-nginx
 
 
 
