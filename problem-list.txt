@@ -58,3 +58,5 @@ https://github.com/kubernetes/ingress-nginx
 #variable
 docker usrname, pwd
 k8s kubeconfig token
+
+#worker-node ip with kubectl get svc
